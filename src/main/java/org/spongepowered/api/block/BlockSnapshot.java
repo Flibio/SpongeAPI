@@ -41,7 +41,7 @@ import java.util.UUID;
 
 /**
  * An immutable representation of a {@link BlockState} and any extra data that
- * may be associated with it, including {@link TileEntity} related data..
+ * may be associated with it, including {@link TileEntity} related data.
  */
 public interface BlockSnapshot extends LocatableSnapshot<BlockSnapshot> {
 
