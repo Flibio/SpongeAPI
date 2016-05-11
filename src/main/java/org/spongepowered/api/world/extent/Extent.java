@@ -39,6 +39,7 @@ import org.spongepowered.api.util.PositionOutOfBoundsException;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.extent.worker.MutableBiomeAreaWorker;
 import org.spongepowered.api.world.extent.worker.MutableBlockVolumeWorker;
+import org.spongepowered.api.world.schematic.PaletteType;
 
 import java.util.Collection;
 import java.util.Optional;
@@ -527,5 +528,5 @@ public interface Extent extends EntityUniverse, TileEntityVolume, InteractableVo
      */
     void setNotifier(int x, int y, int z, @Nullable UUID uuid);
     
-    ArchetypeVolume createArchetypeVolume(Vector3i min, Vector3i max);
+    ArchetypeVolume createArchetypeVolume(Vector3i min, Vector3i max, Vector3i origin, PaletteType paletteType);
 }

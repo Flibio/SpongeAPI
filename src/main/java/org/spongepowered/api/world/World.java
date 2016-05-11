@@ -310,10 +310,10 @@ public interface World extends Extent, WeatherUniverse, Viewer, ContextSource, M
     PortalAgent getPortalAgent();
 
     @Override
-    MutableBiomeAreaWorker<? extends World> getBiomeWorker();
+    MutableBiomeAreaWorker<World> getBiomeWorker();
 
     @Override
-    MutableBlockVolumeWorker<? extends World> getBlockWorker();
+    MutableBlockVolumeWorker<World> getBlockWorker();
 
     /**
      * Instructs the world to save all data.
