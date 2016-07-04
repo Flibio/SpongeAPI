@@ -95,8 +95,6 @@ public final class Keys {
 
     public static final Key<Value<Boolean>> ARMOR_STAND_HAS_BASE_PLATE = KeyFactory.fake("ARMOR_STAND_HAS_BASE_PLATE");
 
-    public static final Key<Value<Boolean>> ARMOR_STAND_HAS_GRAVITY = KeyFactory.fake("ARMOR_STAND_HAS_GRAVITY");
-
     public static final Key<Value<Boolean>> ARMOR_STAND_IS_SMALL = KeyFactory.fake("ARMOR_STAND_IS_SMALL");
 
     public static final Key<Value<Boolean>> ARMOR_STAND_MARKER = KeyFactory.fake("ARMOR_STAND_MARKER");
@@ -314,6 +312,8 @@ public final class Keys {
     public static final Key<Value<DyeColor>> DYE_COLOR = KeyFactory.fake("DYE_COLOR");
 
     public static final Key<Value<Boolean>> ELDER_GUARDIAN = KeyFactory.fake("ELDER_GUARDIAN");
+
+    public static final Key<Value<Boolean>> ENTITY_HAS_GRAVITY = KeyFactory.fake("ENTITY_HAS_GRAVITY");
 
     public static final Key<MutableBoundedValue<Double>> EXHAUSTION = KeyFactory.fake("EXHAUSTION");
 

@@ -531,4 +531,13 @@ public interface Entity extends Identifiable, Locatable, DataHolder, DataSeriali
         Optional<Boolean> optional = entity.get(Keys.VANISH);
         return !optional.isPresent() || !optional.get();
     }
+
+    /**
+     * Returns whether this entity has gravity.
+     *
+     * @return True if this entity has gravity
+     */
+    default boolean hasGravity() {
+        return get(Keys.ENTITY_HAS_GRAVITY).get();
+    }
 }

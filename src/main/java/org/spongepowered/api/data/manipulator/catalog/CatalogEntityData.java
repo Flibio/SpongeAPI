@@ -61,6 +61,7 @@ import org.spongepowered.api.data.manipulator.mutable.entity.FoodData;
 import org.spongepowered.api.data.manipulator.mutable.entity.FuseData;
 import org.spongepowered.api.data.manipulator.mutable.entity.GameModeData;
 import org.spongepowered.api.data.manipulator.mutable.entity.GlowingData;
+import org.spongepowered.api.data.manipulator.mutable.entity.GravityData;
 import org.spongepowered.api.data.manipulator.mutable.entity.GriefingData;
 import org.spongepowered.api.data.manipulator.mutable.entity.HealingSourceData;
 import org.spongepowered.api.data.manipulator.mutable.entity.HealthData;
@@ -311,6 +312,11 @@ public final class CatalogEntityData {
      * <!-- TODO: Find all non-effected entities -->
      */
     public static final Class<GlowingData> GLOWING_DATA = GlowingData.class;
+    /**
+     * Signifies that an entity will ignore gravity. Usually applies to all
+     * known types of entities.
+     */
+    public static final Class<GravityData> GRAVITY_DATA = GravityData.class;
     /**
      * Signifies that an entity can modify blocks in the world. Usually applies
      * to {@link Enderman} and {@link Humanoid}s.
