@@ -34,6 +34,7 @@ import org.spongepowered.api.data.DataSerializable;
 import org.spongepowered.api.data.DataTransactionResult;
 import org.spongepowered.api.data.key.Keys;
 import org.spongepowered.api.data.manipulator.mutable.TargetedLocationData;
+import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.event.cause.Cause;
 import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
 import org.spongepowered.api.event.entity.MoveEntityEvent;
@@ -537,7 +538,7 @@ public interface Entity extends Identifiable, Locatable, DataHolder, DataSeriali
      *
      * @return True if this entity has gravity
      */
-    default boolean gravity() {
-        return get(Keys.ENTITY_HAS_GRAVITY).get();
+    default Value<Boolean> gravity() {
+        return getValue(Keys.ENTITY_HAS_GRAVITY).get();
     }
 }
