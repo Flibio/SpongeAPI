@@ -313,8 +313,6 @@ public final class Keys {
 
     public static final Key<Value<Boolean>> ELDER_GUARDIAN = KeyFactory.fake("ELDER_GUARDIAN");
 
-    public static final Key<Value<Boolean>> ENTITY_HAS_GRAVITY = KeyFactory.fake("ENTITY_HAS_GRAVITY");
-
     public static final Key<MutableBoundedValue<Double>> EXHAUSTION = KeyFactory.fake("EXHAUSTION");
 
     public static final Key<ImmutableBoundedValue<Integer>> EXPERIENCE_FROM_START_OF_LEVEL = KeyFactory.fake("EXPERIENCE_FROM_START_OF_LEVEL");
@@ -420,6 +418,8 @@ public final class Keys {
      * @see GrowthData#growthStage()
      */
     public static final Key<MutableBoundedValue<Integer>> GROWTH_STAGE = KeyFactory.fake("GROWTH_STAGE");
+
+    public static final Key<Value<Boolean>> HAS_GRAVITY = KeyFactory.fake("HAS_GRAVITY");
 
     public static final Key<Value<Vector3d>> HEAD_ROTATION = KeyFactory.fake("HEAD_ROTATION");
 

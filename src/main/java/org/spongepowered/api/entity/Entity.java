@@ -539,6 +539,6 @@ public interface Entity extends Identifiable, Locatable, DataHolder, DataSeriali
      * @return True if this entity has gravity
      */
     default Value<Boolean> gravity() {
-        return getValue(Keys.ENTITY_HAS_GRAVITY).get();
+        return getValue(Keys.HAS_GRAVITY).get();
     }
 }
